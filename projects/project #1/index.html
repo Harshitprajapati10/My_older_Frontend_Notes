@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap rel=" stylesheet">
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        background-image: url(img/bg.jpg);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 25px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+
+    .left img {
+        width: 176px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 55%;
+        margin: 25px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .right {
+        position: absolute;
+        right: 39px;
+        top: 25px;
+        display: inline-block;
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 25px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 22px 35px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: dashed;
+        color: grey;
+    }
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    .btn:hover {
+        background-color: rgb(29, 27, 27);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 63px 640px;
+        padding: 75px 28px;
+        width: 48%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 69%;
+        margin: 20px auto;
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="" srcset="">
+            <div>Harshit collections</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Join the best shop of Haridwar now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email ID">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone NUmber">
+                </div>
+                <!-- <div>
+                    <input type="text" x-webkit-speech>
+                </div> -->
+                <button class="btn">Submit</button>
+            </form>
+    </header>
+</body>
+
+</html>

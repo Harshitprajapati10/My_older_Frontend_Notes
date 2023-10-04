@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: antiquewhite;
+            
+            /* syntax of box shadow : x y blurradius spreadradius color(use negative to give shadow in reverse direction) */
+
+            /* box-shadow: 2px 4px green; */
+            /* box-shadow: -10px -12px green; */
+            /* negative blur radius sharpens the shadow, positive blur radius blurrs the shadow */
+            /* box-shadow: 5px 7px 10px green; */
+
+            /* spread radius spread the shadow */
+            /* box-shadow: 5px 7px 10px 34px green; */
+            
+            /* in rgba ,a decides how dark is the color: ; */
+            /* box-shadow: 5px 7px 10px 34px rgba(83, 176, 222, 0.5); */
+
+/* use inset for making shadow inside the box */
+            /* box-shadow: inset 3px 5px red; */
+
+
+
+            /* to give multiple shadow */
+            box-shadow: 3px 5px green, 4px 6px red;
+        }
+        .card h2{
+            /* text-shadow: 3px 4px rgb(222, 202, 202); */
+            /*syntax same as boxshadow*/
+
+
+            text-shadow: 3px 4px 2px rgb(222, 202, 202);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-2">
+            <h2>This is C++ course</h2>
+            <p>I have started C++ course which does'n mean we will stop this course.WE Will continue this couse till completion.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Architecto similique exerciationem
+                voluptate sit quis perspiciatis reiciendis. Ipsam, laudantium. Voluptate, aliquam consectetur doloremque
+                reiciendis culpa corporis voluptatum, labore inventore molestias facilis, ipsum porro.</p>
+        </div>
+        <div class="card" id="card-1">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Architecto similique exercitationem
+                voluptate sit quis perspiciatis reiciendis. Ipsam, laudantium. Voluptate, aliquam consectetur doloremque
+                reiciendis culpa corporis voluptatum, labore inventore molestias facilis, ipsum porro.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> Card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Architecto similique exercitationem
+                voluptate sit quis perspiciatis reiciendis. Ipsam, laudantium. Voluptate, aliquam consectetur doloremque
+                reiciendis culpa corporis voluptatum, labore inventore molestias facilis, ipsum porro.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- AGAIN -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is about</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            /* margin: auto; */
+            margin: auto;
+            border: 2px solid red;
+            width: 1200px;
+            /* width: 15%;to move block element set its width */
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 114px;
+
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            /*inline ki width set nahi kari jaa sakti
+            block element ki width set karri ja sakti hai
+            ...(inline block) ke use karne se element inline ho jaega or uski width set kari ja sakegi*/
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            /* box-sizing: border-box; */
+            /*iske use karne se width wahi rahegi jo hamne di */
+            display: inline-block;
+
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="iron.jpg" alt="" width="300" height="60">
+        <h3>Welcome to harry's blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, magnam praesentium nemo tempora
+                officiis earum porro optio consectetur repellendus esse eligendi illum adipisci. Architecto maxime eius
+                officia quas facilis quaerat, placeat nemo magnam assumenda laboriosam eligendi itaque, accusantium
+                nesciunt eaque harum cum fuga aspernatur.
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, magnam praesentium nemo tempora
+                officiis earum porro optio consectetur repellendus esse eligendi illum adipisci. Architecto maxime eius
+                officia quas facilis quaerat, placeat nemo magnam assumenda laboriosam eligendi itaque, accusantium
+                nesciunt eaque harum cum fuga aspernatur.
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, magnam praesentium nemo tempora
+                officiis earum porro optio consectetur repellendus esse eligendi illum adipisci. Architecto maxime eius
+                officia quas facilis quaerat, placeat nemo magnam assumenda laboriosam eligendi itaque, accusantium
+                nesciunt eaque harum cum fuga aspernatur.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

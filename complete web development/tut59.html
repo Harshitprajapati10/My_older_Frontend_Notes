@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time is JS</title>
+</head>
+<style>
+    .container {
+        font-size: 23px;
+        background-color: blanchedalmond;
+        border: 2px solid green;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    #time {
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        //let dt = new Date();-->gives currret date and time
+
+        //let now = new Date(1);-->return refrence time
+        //let now = new Date(1000);-->return refrence time+1s
+
+        //console.log(now)
+
+        //let newDate = new Date("2104-03-10");
+        //console.log(newDate);//Mon Mar 10 2104 05:30:00 GMT+0530 
+
+        //let newDate = new Date(year, month ,date, hours, min, sec, millcecs);
+        let newDate = new Date(3004, 3, 10, 11, 29, 59, 60);
+        console.log(newDate);
+
+
+        let yr = newDate.getFullYear();
+        console.log("The year is", yr);
+
+        let dt = newDate.getDate();
+        console.log("The date is", dt);
+
+        let month = newDate.getMonth();
+        console.log("The month is", month);
+
+        let hour = newDate.getHours();
+        console.log("The hour is", hour);
+
+        let min = newDate.getMinutes();
+        console.log("The minute is", min);
+
+        let sec = newDate.getSeconds();
+        console.log("The second is", sec);
+
+        let ms = newDate.getMilliseconds();
+        console.log("The ms is", ms);
+
+        //changing date
+        newDate.setDate(67);//auto correct date
+        console.log(newDate);
+        //setSeconds,setMinutes,setHours
+
+        console.log(Date.now())//return timestamp from 1970s rime in ms
+
+        //creating clock
+        setInterval(updateTime, 1000);
+        function updateTime() {
+            time.innerHTML = new Date()
+        }
+    </script>
+</body>
+
+</html>

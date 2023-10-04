@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is HTML forms tutorial</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="Backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role:</label>
+            <input type="text" name="myrole" id="role">
+
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus</label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Are you eligible:</label>
+            <input type="checkbox" name="myEligiblity" id="eligible" checked>
+        </div>
+        <br>
+        <div>
+            Gender:Male<input type="radio" name="myGender" id="">FeMale <input type="radio" name="myGender" id="">Others
+            <input type="radio" name="myGender" id="">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car"></label>
+            <select name="mycar" id="car">
+                <option value="ind" selected>indica</option>
+                <option value="swf">swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="reset now">
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>

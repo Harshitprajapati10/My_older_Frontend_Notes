@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial </title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialise the container as a flexbox */
+            display: flex;
+
+            /*FLEX PROPERTY FOR FLEX CONTAINER*/
+
+
+            /* Flex properties for flex container */
+            /* flex-direction: row; */
+            /* by default row */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; make a row in reverse order */
+            /* flex-direction: column-reverse; make a column in reverse order */
+
+            /* flex-wrap: nowrap; by default no wrap */
+            /* flex-wrap: wrap; */
+            /* wrap(chota bada karme pe use hoga) hoke next line me aate jayenge  first sbse upar*/
+            /*flex-wrap: wrap-reverse;   wrap hoke next line me aate jayenge in reverse order  last sabse upar*/
+
+            /* flex-flow:(syntax :direction wrap) ; use two properties at same time */
+            /* flex-flow: row-reverse wrap; */
+
+
+            /* justify-content: center;   centre the elements */
+            /* justify-content: space-between;      corner me space na karo and har do box k beech equal space kar do */
+            /* justify-content: space-evenly;    sarri spaces incluiding starting and ending equal kar do */
+            /* justify-content: space-around;       har box ko left or right me equal space do(iski wajah se do box k beech ka space jada dikhege) */
+
+
+            /* align-items: center; */
+            /*(DM)  sabko vertically center kardo*/
+            /* align-items: flex-end; */
+            /*saare end me aa jayenge*/
+            /* align-items: flex-start; */
+            /*(by default)saare top pe aa jayenge*/
+            /* align-items: stretch; */
+            /*make vertically evenly spaces*/
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* flex properties for a flex  item */
+            order: 2;
+            /* flex-grow: 2;           2 times proportion le lega ,jab box ko grow hone ka mauka milega(IN THIS PROPERTY NEGATIVE NUMBERS ARE INVALID) */
+            /* flex-shrink: 2;   shrinks by 2 fold faster */
+        }
+        #item-2{
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+
+            flex-basis: 160px;
+             /* when flex direction is set to row flex-basis: will control width; */
+             /* when flex direction is set to column flex-basis: will control height; */
+
+             /* align-self: flex-end; second box end m chla jayega */
+             /* align-self: flex-start; second element start m chla jayega(default) */
+             /* align-self: center; second element center m chla jayega(default) */
+        }
+        #item-3{
+             /*order: 40;  jiska order jada wo last me jayega */
+             flex: 2 2 222px;/*shorthand   flex:flexgrow flexshrink flexbasis;*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container"><!--  ye flex ban gaya or iske item flex item ban gaye -->
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div> -->
+        <!-- <div class="item" id="item-5">Fifth Box</div> -->
+        <!-- <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>

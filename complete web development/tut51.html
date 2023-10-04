@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+
+<body>
+    <!-- use div>ul>li{item-$}*7 -->
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+        <script>
+        //     var string1 = "This is a string";//var is global scope
+        //     var string1 = "This is a string2";
+        //     console.log(string1);
+        //     let a = "u";//work of a is only inside this block,using let(GLOBAL SPACE)
+        //     // let a = "u6";//throws error as a can't rewritten
+        //     {
+        //         let a = "u6";// not throws error as it is in local scope now
+        //         console.log(a);//return u6
+        //     }
+        //     console.log(a);//return u
+
+
+        //     const b = "This cannot be changed"
+        //    // b="Why I want to change it"//constant is not changed throws error
+        //     console.log(b);
+
+        //CONDITIONALS STATEMENTS
+
+        let age = 5;
+        if(age>18){
+            console.log("You can drink water");
+        } 
+        else if(age==2){
+            console.log("Age is 2");
+        }
+        else if(age==5){
+            console.log("Age is 5");
+        }
+        else{
+            console.log("you can drink cold Drink");
+        }
+
+
+        //switch case statements
+        const cups = 42;
+        switch (cups) {//if not break ,switch runs all cases below executed case
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+            case 41:
+                console.log("The value of cups is 41");
+                break;
+            case 42:
+                console.log("The value of cups is 42");
+                break;
+            case 43:
+                console.log("The value of cups is 43");
+                 break;
+        
+            default:
+                console.log("The value of cups is none");
+                break;
+        }
+
+
+
+
+
+
+
+        </script>
+    </div>
+</body>
+
+</html>

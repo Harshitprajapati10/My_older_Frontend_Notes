@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container {
+            /*to centere a element 1)display inline block and then block  2)set width 3)margin auto*/
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+
+        /* to select elements that have type text  ,use pseudo selectors(target a attribute)*/
+        input[type=text] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+
+        /*targeting a anchor whose target is set ,also work when when target is _self*/
+        a[target] {
+            font-size: 44px;
+            color: violet;
+        }
+
+
+        /*specifically targeting a target='self use'*/
+        a[target='_self'] {
+            font-size: 34px;
+            color: rgb(148, 152, 228);
+        }
+
+
+        input[type=email] {
+            color: yellow;
+            border: 4px solid black;
+        }
+
+
+        /* nth child selector (select nth element of li)*/
+        /* li:nth-child(3){
+           color: cyan; 
+        } */
+
+
+        /* har 2nd pe selection ke liye */
+        /* li:nth-child(2n+0){
+            color: red;
+        } */
+
+
+
+        /**ye sirf n ki value put karega or select karega put n=0,1,2... */
+        li:nth-child(3n+3) {
+            color: red;
+        }
+
+
+        /* odd child */
+        li:nth-child(odd) {
+            background-color: blue;
+        }
+
+
+        /* even child */
+        li:nth-child(even) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item-1</li>
+            <li class="item" id="item-2">Item-2</li>
+            <li class="item" id="item-3">Item-3</li>
+            <li class="item" id="item-4">Item-4</li>
+            <li class="item" id="item-5">Item-5</li>
+            <li class="item" id="item-6">Item-6</li>
+            <li class="item" id="item-7">Item-7</li>
+            <li class="item" id="item-8">Item-8</li>
+            <li class="item" id="item-9">Item-9</li>
+            <li class="item" id="item-10">Item-10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

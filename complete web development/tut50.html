@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // function to return first occurence index of element in a string
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // function to return last occurence index of element in a string
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Substring from a string
+
+        var substr = str.slice(1,5);//return index range(1,5),include indexes 1,2,3,4
+        // slice takes negative value as well 
+        console.log(substr);
+
+        var substr1 = str.substring(1,7);//include indexes 1,2,3,4,5,6
+        //substring cannot take negative values
+        console.log(substr1);
+        
+        var substr2 = str.substr(1,2);//include indexes 1,2
+        //one se start karo or length 2 lelo
+        console.log(substr2);
+
+        //replacing a string in a substring
+        var replaced = str.replace('string','Harry');//replace 'string' by 'Harry' and create a new string replaced
+        console.log(str);
+        console.log(replaced);
+
+
+
+        console.log(str.toUpperCase());//transforms every charcter to upper case
+        console.log(str.toLowerCase());//transforms every character to lower case
+
+
+        //concatenation is also done by concat method
+        var newString = str.concat(' New String');
+        console.log(newString);
+
+        //trim funtions remove whitespaces from starting and end
+        var strwhite = "    this   contains           whitespaces     ";
+        console.log(strwhite);
+        console.log(strwhite.trim());
+
+
+        // #charAt function takes index and return element
+        var char2 = str.charAt(2);
+        console.log(char2);
+
+        //charcodeat() return UTF-16 character code at given index
+        var char3 = str.charCodeAt(2);
+        console.log(char3);
+
+        //printing given index 
+        console.log(str[3])
+        console.log(str)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

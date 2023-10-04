@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More in selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        /* kisi bhi div ke kitne bhi andar p mil jaaye usse select kar lo */
+        /* div p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+
+        /* div li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+
+        /* to select direct p inside div, agar direct child ko select karna hai to use > sign */
+        /* agar div k bad p ara hai t property lagu hogi */
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+
+        /* ye property us element k liye lagu hogi jiske picche div hai */
+        /* div+p{
+            color: white;
+            background-color: rgb(173, 95, 95);
+
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li id="item"><p>This is another paragraph inside li</p></li>
+                <li>THis will not get affected</li>
+                <p>This is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

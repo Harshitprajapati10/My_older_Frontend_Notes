@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ineraction Using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        //----------------ALERT---------------------
+        //Alert in in-browser Javascript:takes string as an argument and pop up on refreshing the website
+        //create modale ,pehle modale hoga fir weebsite excess hogi
+        // alert("This is a message");//Alert does not return anything
+
+    //     let a = alert("This is a message")
+    //    console.log(a)//return undefined
+//-------------------PROMPT---------------------
+
+        //pop up like alert and asks for name , second argument is default 
+        //typed matter is assigned to name variable(if guest is not written ,then default is nothing)
+        // let name = prompt("What is Your name","Guest");
+        // console.log(name);
+
+//----------------------CONFIRM-------------------
+
+        //use confirm to double check,gives two options ok , cancel
+        //return true if ok is clicked,return false if cancel is clicked
+        // let deletePost  = confirm("Do you really want to delete this post?");
+        // // console.log(deletePost);
+        // if(deletePost){//for true
+        //     console.log("Your post has been deleted sucessfully");
+        // }
+        // else{//for false
+        //     console.log("Your post has not been deleted");
+        // }
+
+
+
+
+        let age = prompt("Give your age",20);
+        if(age>18){
+            console.log("You are allowed inside the club");
+        }
+        else{
+            console.log("You are not allowed")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval and Settimeout in JS</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial 58");
+        //setTimeout--> Allows us to run the function once after the interval of time
+        //clearTimeout--> Allows us to run the function once repeatedly the interval of time
+
+        function greet(name,byetext){
+            console.log("Hello GoodMorning" + name+" " + byetext);
+        }
+
+        //syntax setTimeout(function name, time in millisecs, function argument)
+        //setTimeout(greet, 5000, " Harshit" , "takecare");//print after 5 seconds
+
+        //setTimeout(greet(), 2000);//not run because parenthestis used
+
+
+        //timeOUT = setTimeout(greet, 5000, " Harshit" , "takecare")
+        //console.log(timeOUT)//return 1 the unique id of setTimeout , using this id function is called
+
+        //clearTimeout(timeOUT);//timeout ko clear kar do(sign up in 20 secs but already signed)
+
+        //setInterval(greet,1000,"harshit","gooodnight");
+
+        //clearInterval used then it cannot run
+        //intervalID = setInterval(greet,1000,"harshit","gooodnight");
+        //clearInterval(intervalID);
+
+        
+        //adding time
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time
+        }      
+        setInterval(displayTime , 1000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            background: rgb(238, 222, 131);
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(237, 234, 234);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationery {
+            /* clear: left; */
+            /*mere left wale mujhe overlap na kare*/
+            clear: both;
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: right;
+            text-align: left;
+            /*overwrite property*/
+            text-align: center;
+            /*overwrite property*/
+            text-align: justify;
+            /*overwrite property*/
+
+
+        }
+
+        h1 {
+            margin: 33px auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio amet dolore
+                sed modi fugiat earum! Minima maxime error sed. Architecto incidunt tempore dolores itaque, ex optio
+                quibusdam omnis earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure et facilis
+                dolorum id sint ex libero aliquam, cumque porro, dignissimos velit officia quo nulla adipisci illo. Quos
+                fugit earum ab laudantium minima expedita?</p>
+
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio amet
+                dolore sed modi fugiat earum! Minima maxime error sed. Architecto incidunt tempore dolores itaque, ex
+                optio quibusdam omnis earum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quis
+                veniam dolorem officiis, velit esse eum quaerat impedit, cumque ducimus illum, nobis est alias saepe.
+                Molestiae dignissimos delectus, recusandae incidunt at alias quidem expedita.</p>
+
+        </div>
+        <div id="stationery" class="item">
+            <h3>stationery</h3>
+            <p id="stationerypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio amet
+                dolore sed modi fugiat earum! Minima maxime error sed. Architecto incidunt tempore dolores itaque, ex
+                optio quibusdam omnis earum quisquam.</p>
+
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio amet
+                dolore sed modi fugiat earum! Minima maxime error sed. Architecto incidunt tempore dolores itaque, ex
+                optio quibusdam omnis earum quisquam.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
